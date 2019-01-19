@@ -100,7 +100,7 @@ Cài đặt Virtual Environment
 
 - Cấu hình Supervisord
     ```sh 
-    cat << EOF >> /etc/supervisord.d/telebot.conf
+    cat << EOF >> /etc/supervisord.d/telebot.ini
     [program:telebot]
     command = /root/Project/venv/bin/python /root/Project/telegrambot-exec-command/telebot.py
     autostart=true
