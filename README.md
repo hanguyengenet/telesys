@@ -21,7 +21,7 @@
 - Lấy ID của user thao tác với bot (Nhằm xác thực)
     + Truy cập đường dẫn 
         ```sh
-        https://api.telegram.org/bot[token]/getUpdates
+        https://api.telegram.org/bot{TOKEN}/getUpdates
         ```
 
     + Thực hiện thao tác chat với bot để lấy id user
@@ -53,6 +53,7 @@ Cài đặt python3.6
 Cài đặt Virtual Environment
 - Cài đặt pip
     ```sh 
+    yum install wget -y
     wget https://bootstrap.pypa.io/get-pip.py
     sudo python3.6 get-pip.py
     ```
@@ -74,6 +75,7 @@ Cài đặt Virtual Environment
 
 - Clone bot về source về
     ```sh
+    yum install git -y
     git clone http://github.com/nhanhoadocs/telegrambot-exec-command.git 
     ```
 
@@ -82,7 +84,7 @@ Cài đặt Virtual Environment
     cd telegrambot-exec-command
     pip install -r requirement.txt
     ```
-- Cấu hình cho trong file setting.ini
+- Cấu hình cho trong file `setting.ini`
     ```sh 
     TOKEN = {token của bot}
     # Cho phep thuc hien stop/start/restart
@@ -138,7 +140,7 @@ Cài đặt Virtual Environment
     telebot: started
     supervisor> status
     telebot                          RUNNING   pid 25850, uptime 0:00:11
-    supervisor>
+    supervisor> exit
     ```
 
 - Để kiểm tra bot running tiến hành thao tác với bot 
