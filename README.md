@@ -76,12 +76,12 @@ Cài đặt Virtual Environment
 - Clone bot về source về
     ```sh
     yum install git -y
-    git clone http://github.com/nhanhoadocs/telegrambot-exec-command.git 
+    git clone http://github.com/nhanhoadocs/telesys.git 
     ```
 
 - Cài đặt requirement packet 
     ```sh
-    cd telegrambot-exec-command
+    cd telesys
     pip install -r requirement.txt
     ```
 - Cấu hình cho trong file `setting.ini`
@@ -104,7 +104,7 @@ Cài đặt Virtual Environment
     ```sh 
     cat << EOF >> /etc/supervisord.d/telebot.ini
     [program:telebot]
-    command = /root/Project/venv/bin/python /root/Project/telegrambot-exec-command/telebot.py
+    command = /root/Project/venv/bin/python /root/Project/telesys/telebot.py
     autostart=true
     autorestart=true
     startrereies=5
