@@ -3,6 +3,7 @@
 ## Tính năng 
 - Cho phép restart, stop, start service đang running trên Server
 - Limit danh sách user có thể thao tác
+- Thao tác check và thao tác với service loại bỏ các Inject command bash () { :; }; || ... Ex:`systemctl status httpd||{echo,'abc'}`
 - Advance: Có thể thực hiện các câu lệnh của linux khi tương tác với telegram_bot
 
 ## Cách sử dụng 
