@@ -48,7 +48,7 @@ def check_status(string):
     if (status == 0):
         return "Running"
     else:
-        return "Stopped"
+        return "Stopped or Not-found"
 
 
 # Telegram dispatcher ========================================
